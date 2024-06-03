@@ -2,6 +2,8 @@
 
 import { IProduct } from '@/app/product/page';
 import React from 'react';
+import logo from "../../public/logo.png"
+import Image from 'next/image';
 
 const Invoice = ({ products, totalAmount, grandTotal }: any) => {
     const date = new Date()
@@ -13,7 +15,7 @@ const Invoice = ({ products, totalAmount, grandTotal }: any) => {
                         <h1 className="text-2xl font-bold">INVOICE GENERATOR</h1>
                         <p>Sample Output should be this</p>
                     </div>
-                    <img src="../favicon.ico" alt="Logo" className="w-20 h-20" />
+                    <Image src={logo} alt="Logo" className="h-20" />
                 </div>
                 <div className="">
                     <table className="w-full border-b mb-6">
